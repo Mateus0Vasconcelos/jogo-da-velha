@@ -1,0 +1,76 @@
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: burlywood;
+}
+
+h1 {
+    text-align: center;
+}
+
+#botao-reiniciar, #botao-reiniciar-vitorias {
+    font-size: 1.5em;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    background-color: rgb(196, 221, 230);
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 50px;
+}
+#botao-reiniciar {
+    top: 125px;
+}
+#botao-reiniciar-vitorias {
+    top: 175px;
+}
+
+#jogo{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+
+    height: 30em;
+    width: 30em;
+
+    margin: auto;
+    margin-top: 7%;
+}
+
+.quadrado{
+    border: 1px solid black;
+    background-color: rgb(196, 221, 230);
+    transition: all ease 100ms;
+    font-size: 5em;
+}
+.quadrado:active {
+    background-color: lightblue;
+}
+
+#contador-vitorias {
+    font-size: 1.5em;
+
+    background-color: rgb(196, 221, 230);
+    
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+#contador-vitorias p {
+    margin: 0;
+}
+#vitorias-X {
+    margin-bottom: 12px !important;
+}
+#vitorias-O {
+    margin-top: 12px !important;
+}
