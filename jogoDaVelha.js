@@ -80,6 +80,7 @@ function verificaDiagonalCompleta(index) {
     for (let i = 2; i < 7; i += 2) {
         if (quadradosEl[i].innerHTML != marcacaoAtual) {
             verificacaoDiagonal2 = 0;
+            break;
         }
     }
     return Math.ceil((verificacaoDiagonal1 + verificacaoDiagonal2) / 2);
